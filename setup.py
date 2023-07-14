@@ -13,7 +13,7 @@ setup(
                 'torch_int/kernels/bindings.cpp',
             ],
             include_dirs=['torch_int/kernels/include'],
-            extra_link_args=['-lcublas_static', '-lcublasLt_static',
+            extra_link_args=['-lcublas', '-lcublasLt',
                              '-lculibos', '-lcudart', '-lcudart_static',
                              '-lrt', '-lpthread', '-ldl', '-L/usr/lib/x86_64-linux-gnu/'],
             extra_compile_args={'cxx': ['-std=c++14', '-O3'],
